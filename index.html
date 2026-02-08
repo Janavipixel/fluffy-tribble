@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Catalogue Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Book Catalogue Application</h1>
+    <p>Manage books using CRUD operations</p>
+</header>
+
+<main>
+    <section class="form-section">
+        <h2>Add / Update Book</h2>
+
+        <input type="hidden" id="bookIndex">
+
+        <label>Title</label>
+        <input type="text" id="title">
+
+        <label>Author</label>
+        <input type="text" id="author">
+
+        <label>Genre</label>
+        <input type="text" id="genre">
+
+        <label>Year</label>
+        <input type="number" id="year">
+
+        <button onclick="saveBook()">Save Book</button>
+    </section>
+
+    <section class="list-section">
+        <h2>Book List</h2>
+        <div id="bookList"></div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>}
